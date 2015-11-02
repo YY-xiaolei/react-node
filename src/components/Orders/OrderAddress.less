@@ -1,0 +1,50 @@
+@import '../variables.less';
+
+.Address{
+  &.add{
+    display:none;
+  }
+  &-container{
+    background:@white;
+    .title{
+      font-size:@size-08;
+      line-height:@size-20;
+      padding-left:@size-10;
+      border-bottom:1px solid @gray-lighter;
+      display:none;
+    }
+    .address-list{
+      >ul{
+        margin:0;
+        padding:0;
+        list-style:none;
+        >li{
+          padding:@size-02 @size-10;
+          font-size:@size-09;
+          border-bottom:1px solid @gray-lighter;
+          position:relative;
+          .select {
+            position:absolute;
+            color:@blue;
+            top:30%;
+            right:@size-10;
+            i{
+              font-size:@size-26;
+            }
+          }
+          >div{
+            line-height:@size-11;
+          }
+        }
+      }
+      .address-add-btn{
+        display:block;
+        text-align:center;
+        color:@blue;
+        font-size:@size-16;
+        line-height:@size-16;
+        padding-bottom:@size-04;
+      }
+    }
+  }
+}

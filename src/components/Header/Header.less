@@ -1,0 +1,204 @@
+/* React Starter Kit | MIT License | http://www.reactstarterkit.com/ */
+
+@import '../variables.less';
+
+.Header {
+  padding-top:@head-space;
+  &-container {
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    width: 100%;
+    background: @gray-darkest;
+    display:flex;
+    >div{
+      display:block;
+      width:@size-22;
+      line-height:@size-20;
+      height:@size-20;
+      padding:@size-05;
+      text-align:center;
+      a{
+        display:inline-block;
+        color:@white;
+        text-decoration:none;
+        height:@size-20;
+        position:relative;
+        i{
+          float:left;
+          color:@white;
+          line-height: @size-20;
+          font-size:@size-20;
+        }
+      }
+    }
+    .more{
+      a{
+        i{
+          font-size:@size-18;
+        }
+      }
+    }
+    .brand{
+      flex:1;
+      a{
+        width:auto;
+        img {
+          float:left;
+          margin-top:@size-04;
+          height: @size-11;
+        }
+      }
+    }
+    .cartCount{
+      display:inline-block;
+      width:@size-08;
+      height:@size-08;
+      background-color:@blue;
+      position:absolute;
+      border-radius:50%;
+      right:@size-01;
+    }
+  }
+  &-menu{
+    background: @gray-darkest;
+    height:0;
+    overflow-y:scroll;
+    transition:500ms;
+    position:fixed;
+    opacity:.5;
+    top:@head-space;
+    left:0;
+    right:0;
+    z-index:10;
+    li{
+      margin:0;
+      border-bottom:solid 1px @gray-light;
+      line-height:@size-30;
+      font-size:@size-10;
+      color:@white;
+      list-style:none;
+    }
+    ul{
+      margin:0 @size-32;
+      padding:1rem 0 4rem;
+      li {
+        i{
+          font-size:@size-16;
+        }
+
+        &:nth-child(1){
+          >a{
+            transition:100ms;
+            i{
+              font-size:1.3rem;
+              margin-left:.1rem;
+            }
+            span{
+              margin-left:.3rem;
+            }
+          }
+        }
+        &:nth-child(2){
+          >a{
+            transition:400ms;
+            span{
+              margin-left:@size-01;
+            }
+          }
+        }
+        &:nth-child(3){
+          >a{
+            transition:1200ms;
+            span{
+              margin-left:@size-01;
+            }
+          }
+        }
+        &:nth-child(4){
+          >a{
+            transition:1600ms;
+            i{
+              font-size:@size-12;
+            }
+            span{
+              margin-left:@size-04;
+            }
+          }
+        }
+        &:nth-child(5){
+          >a{
+            transition:2000ms;
+            i{
+              font-size:@size-13;
+            }
+            span{
+              margin-left:@size-04;
+            }
+          }
+        }
+        &:nth-child(6){
+          >a{
+            transition:2400ms;
+            i{
+              font-size:@size-13;
+            }
+            span{
+              margin-left:@size-04;
+            }
+          }
+        }
+        &:nth-child(7){
+          >a{
+            transition:2800ms;
+            i{
+              font-size:@size-13;
+            }
+            span{
+              margin-left:@size-04;
+            }
+          }
+        }
+        &:nth-child(8){
+          >a{
+            transition:3200ms;
+            i{
+              font-size:@size-13;
+            }
+            span{
+              margin-left:@size-04;
+            }
+          }
+        }
+      }
+    }
+    a{
+      text-decoration:none;
+      color:fade(@white, 80.7%);
+      display:flex;
+      transform:scale(1.4) translateX(16%);
+      opacity:0;
+    }
+  }
+  .show{
+    height:100%;
+    opacity:1;
+  }
+}
+
+
+.containerAll{
+  .Header-menu{
+    >ul{
+      >li{
+        >a{
+          opacity:1;
+          transform:scale(1);
+        }
+      }
+    }
+  }
+}
+.hide{
+  display:none !important
+}

@@ -1,0 +1,164 @@
+/* React Starter Kit | MIT License | http://www.reactstarterkit.com/ */
+
+@import '../variables.less';
+
+.Authorize {
+  background:url(../../public/login.jpg) 50% 50%;
+  background-size:cover;
+  &-container {
+    padding:8%;
+  }
+  a{
+    color:@blue;
+  }
+}
+.loginTip{
+  position:absolute;
+  top:-5rem;
+  left:0;
+  right:0;
+  line-height:@size-12;
+  background:fade(@blue, 80%);
+  color:@yellow;
+  transition:200ms;
+  &.show{
+    top:@head-space;
+  }
+  span{
+    padding:@size-04;
+  }
+  .iconfont{
+    font-size:@size-10;
+    color:@white;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+}
+.Login{
+  p{
+    color:white;
+    margin: 0;
+    padding: 0;
+    font-size:@size-08;
+  }
+  .title{
+    color:@white;
+    font-size:@size-16;
+    line-height:normal;
+    text-align:center;
+    border-bottom:1px solid @gray-lighter;
+    margin:@size-05 0 @size-01;
+    padding:@size-02 0;
+  }
+  .input{
+    margin:0;
+    padding:0;
+    list-style:none;
+    >li{
+      padding:@size-07 0
+    }
+    .input-box{
+      display:flex;
+      border:1px solid @gray-light;
+      position:relative;
+      >input{
+        border:none;
+        border-radius:0;
+        line-height:@size-14;
+        height:@size-24;
+        width:100%;
+        float:right;
+        padding:0 @size-05 0 @size-26;
+      }
+      >.iconfont{
+        position:absolute;
+        top:@size-03;
+        left:@size-07;
+        font-size:@size-14;
+        color:@gray-light;
+      }
+    }
+    .submit{
+      width:100%;
+      background:@blue;
+      color:@white;
+      line-height:@size-24;
+      border:none;
+    }
+    .cancel{
+      border:1px solid @blue;
+      line-height:@size-24;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      text-decoration:none;
+    }
+  }
+  .auth-act{
+    display:flex;
+    justify-content:space-between;
+    font-size: 0.8rem;
+    >span{
+      color:@white;
+      .iconfont{
+        margin-right:@size-01;
+      }
+    }
+    padding:@size-02 0;
+  }
+  .third{
+    margin:@size-04 0;
+    padding:0;
+    list-style:none;
+    font-size:@size-08;
+    .log-sign{
+      a{
+        text-align:center;
+        flex:1
+      }
+    }
+    >li{
+      display:flex;
+      justify-content:space-between;
+    }
+    .log{
+      &-or{
+        font-size:@size-09;
+        color:@white;
+        padding:@size-04 0;
+        >i{
+          flex:1;
+          border-bottom:1px solid @white;
+          height:@size-05;
+        }
+        >span{
+          padding:0 @size-02;
+          font-size:@size-08
+        }
+      }
+      &-ass{
+        display:flex;
+        justify-content:space-between;
+        padding-bottom:@size-22;
+        >div{
+          flex:1;
+          display:flex;
+          justify-content:center;
+          >i{
+            color:@white;
+            font-size:@size-30;
+          }
+        }
+      }
+      &-sign{
+        >a{
+          padding:0 @size-04;
+        }
+      }
+    }
+  }
+}
+.hide{
+  display:none!important;
+}

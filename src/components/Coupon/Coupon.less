@@ -1,0 +1,63 @@
+@import '../variables.less';
+
+.Coupon{
+	background-color:@white;
+	padding:@size-10;
+	&-container{
+		.code{
+			display:flex;
+			input{
+				border:0;
+				flex:1;
+				padding:@size-06;
+				background-color:@gray-lighter;
+			}
+		}
+		.submit{
+			margin-top:@size-06;
+	  	a{
+		  	display:block;
+		  	text-align:center;
+		  	line-height:@size-30;
+		  	color:@white;
+		  	background-color:@blue;
+	  	}
+  	}
+	}
+  .mycoupon{
+  	color:@white;
+		background-color:lighten(@black, 52.7%);
+		text-align:center;
+		margin-top:@size-10;
+		line-height:@size-20;
+  }
+  .coupon-list{
+	  background:@white;
+	  margin-top:@size-05;
+	  padding:0;
+	  .coupon{
+	    border-bottom:1px solid @gray-lighter;
+	    border-top:1px solid @gray-lighter;
+	    font-size:@size-08;
+	    align-items:center;
+	    &-select{
+	      text-align:right;
+	      color:@blue;
+	      i{
+	        font-size:@size-18;
+	      }
+	    }
+	    &-left{
+	      div{
+	        padding-right:@size-10;
+	        text-align:center;
+	      }
+	    }
+	    &-right{
+	      line-height:@size-10;
+	      border-left:1px solid @gray-lighter;
+	      padding:@size-08;
+	    }
+	  }
+ }
+}

@@ -1,0 +1,61 @@
+@import '../variables.less';
+
+.SearchPage{
+  background:@white;
+  .search{
+    &-input{
+      padding:4% 4% 3%;
+      input{
+        width:100%;
+        padding:0 @size-06;
+        border-radius:0;
+        line-height:normal;
+        height:@size-26;
+        font-size:@size-08;
+        border:none;
+        background:@gray-lightest;
+      }
+      button{
+        float:right;
+        width:90%;
+        line-height:@size-26;
+        font-size:@size-08;
+        background:@blue;
+        color:@white;
+        border:none;
+        padding:0;
+      }
+    }
+    &-result{
+      .empty{
+        text-align:center;
+        line-height:@size-50;
+      }
+      padding:0 4%;
+      >dl{
+        margin:0;
+        font-size:@size-09;
+        padding-bottom:@size-06;
+        &:after{
+          content:'';
+          height:0;
+          clear:both;
+          display:block;
+        }
+        >dt{
+          border-bottom:1px solid @gray-lighter;
+          line-height:@size-18;
+        }
+        >dd{
+          float:left;
+          background:@blue;
+          color:@white;
+          line-height:@size-20;
+          border-radius:@size-03;
+          margin:@size-05 @size-05 0 0;
+          padding:0 @size-05;
+        }
+      }
+    }
+  }
+}

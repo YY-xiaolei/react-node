@@ -1,0 +1,79 @@
+/* React Starter Kit | MIT License | http://www.reactstarterkit.com/ */
+/* React Starter Kit | MIT License | http://www.reactstarterkit.com/ */
+.Header {
+  padding-top: 44px;
+}
+.Header-fixed {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  width: 100%;
+  background: #222222;
+  box-shadow: 0 0 1em #666;
+}
+.Header-brand {
+  float: left;
+  padding: 0.8rem;
+  color: #00d8ff !important;
+  height: auto;
+}
+.Header-brand img {
+  float: left;
+  height: 1.2rem;
+}
+.Header-link {
+  float: right;
+}
+.Header-link a {
+  float: left;
+  padding: 0.8rem;
+  color: #999;
+  line-height: 1.2rem;
+}
+.Header-link a i {
+  width: 1.2rem;
+  height: 1.2rem;
+  line-height: 1.2rem;
+  font-size: 1.2rem;
+  color: #fff;
+  float: left;
+}
+.Header-link a.category-btn {
+  position: relative;
+  width: 1.2rem;
+  height: 1.2rem;
+}
+.Header-link a.category-btn i,
+.Header-link a.category-btn:after,
+.Header-link a.category-btn:before {
+  position: absolute;
+  left: 1rem;
+  width: 0.9rem;
+  height: 0.1rem;
+  background: #ffffff;
+  margin-top: 0.2rem;
+  content: '';
+  transition: 200ms;
+}
+.Header-link a.category-btn:before {
+  top: 0.8rem;
+}
+.Header-link a.category-btn i {
+  top: 1.2rem;
+}
+.Header-link a.category-btn:after {
+  top: 1.5rem;
+}
+.Header-link a.category-btn.show i {
+  opacity: 0;
+}
+.Header-link a.category-btn.show:before {
+  transform: translateY(0.4rem) rotate(45deg);
+  width: 1.2rem;
+  background: #fcbb6a;
+}
+.Header-link a.category-btn.show:after {
+  transform: translateY(-0.3rem) rotate(-45deg);
+  width: 1.2rem;
+  background: #fcbb6a;
+}

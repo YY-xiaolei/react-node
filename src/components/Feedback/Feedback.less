@@ -1,0 +1,120 @@
+/* React Starter Kit | MIT License | http://www.reactstarterkit.com/ */
+
+@import '../variables.less';
+
+.Feedback {
+  background: #f5f5f5;
+  color: #333;
+  font-size:@size-08;
+  word-break:break-all;
+  &-container { background:@white;
+    margin: 0 auto;
+    padding: @size-10 @size-10;
+    max-width: @max-content-width;
+    text-align: center;
+    font-size: @size-16; // ~24px
+  }
+  &-submit{
+    margin-top:@size-05;
+    a{
+     background:@blue;
+     width:100%;
+     height:@size-26;
+     line-height:@size-26;
+     display:block;
+     cursor:pointer;
+     color: fade(@white,78%);;
+     text-align:center;
+     font-size:@size-08;
+   }
+  }
+  &-list{
+       background:@gray-darker;
+  }
+  &-listContent{
+    display:-webkit-box;
+    padding: @size-10 @size-10;
+    position: relative;
+    z-index: 8;
+    .content{
+      word-break:break-word;
+    }
+    .lt{
+      width: @size-50;
+      height: @size-50;
+      span{
+        color:@white;
+        font-weight:bold;
+        word-break:break-all;
+        display:block;
+        text-align:center;
+      }
+    }
+    img{
+      width: @size-50;
+      height: @size-50;
+      border-radius:50%;
+      vertical-align: top;
+    }
+    i{
+      background:@gray-darker;
+      font-size:@size-50;
+      border-radius:50%;
+      vertical-align: top;
+    }
+    .rt{
+      -webkit-box-flex:1;
+      background: @gray;
+      margin-left: @size-10;
+      border-radius: @size-10;
+      padding: @size-07 @size-18;
+      position: relative;
+    }
+    p{
+      color: fade(@white,78%);
+      line-height: @size-18;
+    }
+    .rt:before{
+      content: ""; 
+      width:0; 
+      height:0; 
+      border-width:5px;
+       border-style:solid dashed dashed; 
+       overflow:hidden;
+       border-color: transparent @gray transparent transparent;
+        position: absolute;
+        left: -10px;
+        top:1.3rem;
+    }
+  }
+  &-textarea{
+    padding-top:@size-05;
+    display:flex;
+  }
+  &-input{
+    display:flex;
+  }
+  &-spacer {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  input,textarea {
+    border:none;
+    background-color:@gray-lighter;
+    width:100%;
+    font-size:@size-08;
+    padding:@size-04;
+    flex:1;
+  }
+  input{
+    height:@size-26; 
+  }
+  textarea{
+     height:@size-60; 
+  }
+  p{
+    margin:0;
+    padding:0;
+  }
+}
+

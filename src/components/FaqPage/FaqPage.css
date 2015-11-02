@@ -1,0 +1,18 @@
+/* React Starter Kit | MIT License | http://www.reactstarterkit.com/ */
+/* React Starter Kit | MIT License | http://www.reactstarterkit.com/ */
+.FaqPage {
+  margin: 0 auto;
+  padding-top: 15px;
+  width: 100%;
+  background-color: #fff;
+  line-height: 25px;
+}
+p{
+	padding: 0 5px;
+	margin: 0 20px;
+}
+.Faq_ask {
+	margin-top: 15px;
+	 background-color: #e6f3fc;
+	 color: #4c97aa
+}

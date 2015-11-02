@@ -1,0 +1,123 @@
+/* React Starter Kit | MIT License | http://www.reactstarterkit.com/ */
+
+@import '../variables.less';
+
+.OrderDetail {
+  background: @white;
+  &-container { 
+    background:@white;
+  }
+  &-toolbar{
+    background-color:@gray;
+    padding: @size-05 0;
+    display:flex;
+  }
+  a{
+    display:inline-block;
+    text-align: center;
+    color:@white;
+    text-decoration:none;
+    flex:1;
+    .iconfont{
+      font-size:@size-16;
+    }
+  }
+  .name{
+    display: block;
+    font-size:@size-08;
+  }
+  .title{
+    background-color:@blue;
+    text-align:center;
+    color:@white;
+    line-height:@size-18;
+  }
+  .package{
+    display:table;
+    width:100%;
+    div:first-child{
+      display:table-cell;
+      width:37%;
+      text-align:left;
+      padding-left:@size-10;
+      a{
+        text-decoration:underline
+      }
+    }
+    .packIndex{
+      white-space:nowrap;
+      display:table-cell;
+      text-align:center;
+    }
+    div:last-child{
+      display:table-cell;
+      text-align:right;
+      padding-right:@size-10;
+       width:37%;
+       a{
+        text-decoration:underline
+      }
+    }
+  }
+  .otherContent{
+    padding:@size-03 @size-10;
+    .amount{
+      margin-left:@size-14;
+    }
+  }
+  .orderPrice{
+      display:table;
+      width:95%;
+      >p{
+        display:table-row;
+        >span:first-child{
+          display:table-cell;
+        }
+        >span:last-child{
+          display:table-cell;
+          padding-right:@size-10;
+          text-align:right;
+        }
+      }
+    }
+  .content{
+    padding:@size-07 @size-10;
+  }
+  .orderDetail{
+    font-weight:bold;
+  }
+  .orderItem{
+    padding:@size-03 0;
+    ul,li{
+      list-style:none;
+    }
+    li{
+      display:flex;
+      border-bottom: solid 1px @gray-lighter;
+    }
+    li:last-child{
+      border:0;
+    }
+    .orderInfo{
+      padding: 0 0.8rem;
+    }
+    .itemImg{
+      display:flex;
+      img {
+        height:@size-50;
+      }
+    }
+    
+  }
+   p,ul,li{
+    margin:0;
+    padding:0;
+  }
+  
+}
+body{
+    font-size:@size-09;
+}
+.hide{
+  display:none !important;
+}

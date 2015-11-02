@@ -1,0 +1,6 @@
+{
+  "name": "Category",
+  "version": "0.0.1",
+  "main": "./Category.js",
+  "private": true
+}

@@ -1,0 +1,70 @@
+@import '../variables.less';
+
+.AddressAdd{
+  &.list{
+    display:none;
+  }
+ .title{
+    background-color:white;
+    font-size:@size-08;
+    line-height:@size-20;
+    padding-left:@size-10;
+    border-bottom:1px solid @gray-lighter;
+    dispaly:none;
+  }
+  &-container{
+    background:@white;
+    .input{
+      margin:0;
+      padding:0;
+      list-style:none;
+      >li{
+        display:flex;
+        border-bottom:1px solid @gray-lighter;
+        position:relative;
+        height:@size-28;
+        line-height:@size-28;
+        >span{
+          position:absolute;
+          top:0;
+          left:0;
+          bottom:0;
+          width:7rem;
+          font-size:@size-09;
+          padding-left:@size-10;
+          white-space:nowrap;
+          pointer-events:none;
+        }
+        >input, >select {
+          flex:1;
+          border:none;
+          padding:0 @size-03 0 @size-80;
+          background:@white;
+          appearance:none;
+        }
+        >div{
+          padding-left:@size-10;
+        }
+      }
+    }
+    .action{
+      display:flex;
+      padding:@size-10;
+      >button{
+        flex:1;
+        background:@blue;
+        color:@white;
+        border:none;
+        height:@size-24;
+      }
+      >a{
+        flex-basis:45%;
+        margin-left:10%;
+        background:@gray;
+        color:@white;
+        text-align:center;
+        line-height:@size-24;
+      }
+    }
+  }
+}

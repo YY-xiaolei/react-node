@@ -1,0 +1,7 @@
+{
+  "name": "ProductList",
+  "version": "0.0.0",
+  "private": true,
+  "productList": "./ProductList.js",
+  "product": "./product.js"
+}

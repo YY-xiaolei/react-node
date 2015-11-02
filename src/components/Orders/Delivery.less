@@ -1,0 +1,43 @@
+@import '../variables.less';
+
+.Delivery{
+  a{
+    color:white;
+  }
+  &-container{
+    background:@white;
+    .package-list{
+      >ul{
+        margin:0;
+        padding:0;
+        list-style:none;
+        font-size:@size-08;
+        >li{
+          border-top:1px solid @gray-lighter;
+          padding-top:@size-02;
+          .count{
+            padding-left:@size-16;
+          }
+          .pics{
+            display:flex;
+            justify-content:flex-start;
+            padding-bottom:@size-02;
+            span{
+              width:33%;
+            }
+            img{
+              max-width:100%;
+              max-height:@size-50;
+              margin:0 @size-02;
+            }
+          }
+        }
+        .shipment{
+          padding-left:@size-16;
+          background:@gray-lightest;
+          line-height:@size-20;
+        }
+      }
+    }
+  }
+}

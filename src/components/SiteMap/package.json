@@ -1,0 +1,6 @@
+{
+  "name": "SiteMap",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./SiteMap.js"
+}

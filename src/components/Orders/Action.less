@@ -1,0 +1,149 @@
+@import '../variables.less';
+
+.order-action{
+  border-top:2px solid @gray-dark;
+  padding:3%;
+  .cart-count{
+    font-size:@size-08;
+    padding-left:@size-05;
+    border-right:1px solid @gray-light;
+    display:flex;
+    align-items:center;
+    .amount{
+      margin-left:@size-14;
+    }
+    .orderPrice{
+      display:table;
+      width:95%;
+      >div{
+        display:table-row;
+        >span:first-child{
+          display:table-cell;
+        }
+        >span:last-child{
+          display:table-cell;
+          text-align:right;
+        }
+      }
+    }
+  }
+  .cart-checkout{
+    display:flex;
+    align-items:center;
+    justify-content:flex-end;
+    a.square{
+      background:@blue;
+      color:@white;
+      padding:@size-05 @size-10;
+    }
+    .multi-btn{
+      display:flex;
+      padding-left: 5%;
+      flex:1;
+      justify-content:space-around;
+      a.circle{
+        text-decoration:none;
+        text-align:center;
+        display:inline-block;
+        img{
+          width:@size-40;
+        }
+        span{
+          display:block;
+          text-align:center;
+          font-size:@size-06;
+          font-weight:bold;
+          line-height:@size-12;
+        }
+      }
+    }
+  }
+  .cart-step{
+    padding-top:@size-10;
+    height:@size-36;
+    >ul{
+      margin:0;
+      padding:0;
+      list-style:none;
+      border-bottom:1px solid @gray;
+      height:@size-09;
+      display:flex;
+      justify-content:space-between;
+      &.step1{
+        > li:nth-child(1){
+          i{
+            background:@blue;
+          }
+          span{
+            color:@blue;
+          }
+        }
+      }
+      &.step2{
+        > li:nth-child(1), > li:nth-child(2){
+          i{
+            background:@blue;
+          }
+          span{
+            color:@blue;
+          }
+        }
+      }
+      &.step3{
+        > li:nth-child(1), > li:nth-child(2), >li:nth-child(3){
+          i{
+            background:@blue;
+          }
+          span{
+            color:@blue;
+          }
+        }
+      }
+      &.step4{
+        > li:nth-child(1), > li:nth-child(2), >li:nth-child(3), >li:nth-child(4){
+          i{
+            background:@blue;
+          }
+          span{
+            color:@blue;
+          }
+        }
+      }
+      >li{
+        width:@size-11;
+        >i{
+          width:@size-11;
+          height:@size-11;
+          display:inline-block;
+          text-align:center;
+          font-size:@size-08;
+          line-height:@size-11;
+          background:@gray-darker;
+          color:@white;
+          font-style:normal;
+          border-radius:50%;
+        }
+        >span{
+          font-size:@size-08;
+          float:left;
+          margin-left:-70%;
+        }
+        &:first-child > span{
+          margin-left:0;
+        }
+        &:last-child > span{
+          float:right;
+          margin-left:0;
+        }
+        &.current{
+          i{
+            background:@blue;
+          }
+          span{
+            color:@blue;
+          }
+        }
+      }
+    }
+  }
+}

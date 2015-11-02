@@ -1,0 +1,86 @@
+/* React Starter Kit | MIT License | http://www.reactstarterkit.com/ */
+
+@import '../variables.less';
+
+.Review {
+  .orderDetail{
+    padding:@size-05;
+    background: @white;
+    display:flex;
+    img {
+      max-width:100%;
+      max-height:@size-40;
+    }
+    .sale{
+      margin-left:@size-30;
+    }
+    .orderImg{
+      flex-basis:22%;
+    }
+    .orderInfo{
+      flex:1;
+    }
+  }
+
+  .title{
+    background-color:@blue;
+    color:@white;
+    line-height:@size-14;
+    padding:0 @size-10;
+    display:flex;
+    .status{
+      text-align:right;
+      flex:1;
+    }
+  }
+  .star{
+      text-align:center;
+      line-height:@size-30;
+      i{
+        font-size:@size-18;
+        margin:@size-03;
+      }
+    }
+  li{
+    background-color:@white;
+  }
+  .reviewContent{
+    border-top:1px solid @gray-lighter;
+    div{
+      display:flex;
+    }
+    input,textarea{
+      border:0;
+      width:100%;
+      padding:@size-07  @size-10;
+    }
+    div{
+      border-bottom:1px solid @gray-lighter;
+    }
+  }
+  .submit{
+    text-align:center;
+    a{
+      background-color:@blue;
+      text-align:center;
+      color:@white;
+      display:inline-block;
+      width:40%;
+      line-height:@size-26;
+      height:@size-26;
+      margin:@size-10 @size-10;
+    }
+  }
+  .onStar{
+    color:@orange;
+  }
+}
+p,ul,li{
+    list-style:none;
+    margin:0;
+    padding:0;
+  }
+
+body{
+    font-size:@size-09;
+}

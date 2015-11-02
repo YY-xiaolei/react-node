@@ -1,0 +1,40 @@
+@import '../variables.less';
+
+.Payment {
+  &-container {
+    background:@white;
+    .title{
+      background:@blue;
+      color:@white;
+      line-height:@size-14;
+      text-align:center;
+      font-size:@size-07;
+      p{
+        margin:0;
+        padding:0;
+      }
+    }
+    .card-list{
+      font-size:@size-09;
+      >dl{
+        margin:0;
+        >dd{
+          margin:0;
+          border-bottom:1px solid @gray-lighter;
+          line-height:@size-26;
+          padding-left:@size-16;
+          >input{
+            padding:0 @size-04;
+            border:none;
+          }
+        }
+      }
+      .card-current{
+
+      }
+      .card-new{
+
+      }
+    }
+  }
+}

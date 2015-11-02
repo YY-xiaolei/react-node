@@ -1,0 +1,71 @@
+/* React Starter Kit | MIT License | http://www.reactstarterkit.com/ */
+
+@import '../variables.less';
+
+.Shapping {
+
+  .orderDetail{
+    padding:@size-05;
+    background: @white;
+    img {
+      max-width:100%;
+      max-height:@size-40;
+      margin-right:@size-20;
+    }
+    li{
+      display:flex;
+    }
+  }
+  .title{
+    text-align:center;
+    background-color:@gray-lightest;
+    padding:@size-05;
+  }
+  .rule-list{
+    padding: 0 .6rem 0 4rem;
+    position: relative;
+    color:@gray-light;
+    li{ 
+      padding: @size-12 0;
+      position: relative;
+      a{
+        color: #5d2b2e;
+      }
+    }
+    .cur{
+      color:@blue-dark;
+      padding-top:@size-22;
+      
+    }
+    .cur:before{
+      background: @blue-dark;
+      top:52%;
+    }
+    li:before{
+      content: "";
+      overflow: hidden;
+      border-radius: 50%;
+      background: @gray-light;
+      position: absolute;
+      top: 44%;
+      left: -2.6rem;
+      width:10px;
+      height: 10px;
+      border: 1px solid #999;
+    }
+  }
+  .rule-list:before{
+    content: "";
+    width: 1px;
+    background: @gray-light;
+    position: absolute;
+    top: 0;
+    bottom:0;
+    left: 1.7rem;
+  }  
+  p,ul,li{
+    list-style:none;
+    margin:0;
+    padding:0;
+  }
+}

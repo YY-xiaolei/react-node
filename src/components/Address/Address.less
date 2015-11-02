@@ -1,0 +1,129 @@
+/* React Starter Kit | MIT License | http://www.reactstarterkit.com/ */
+
+@import '../variables.less';
+.AddressAdd {
+  &-container {
+    background: @white;
+    .input {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      >li {
+        display: flex;
+        border-bottom: 1px solid @gray-lighter;
+        position:relative;
+        height:@size-28;
+        line-height:@size-28;
+        >span {
+          position:absolute;
+          top:0;
+          left:0;
+          bottom:0;
+          width:7rem;
+          font-size: @size-09;
+          padding-left:@size-10;
+          white-space:nowrap;
+          pointer-events:none;
+        }
+        >input, >select {
+          flex:1;
+          border:none;
+          padding:0 @size-03 0 @size-80;
+          background:@white;
+          appearance:none;
+        }
+      }
+    }
+    .action {
+      display: flex;
+      padding: @size-10;
+      >button,
+      >a {
+        flex: 1;
+        background: @blue;
+        color: @white;
+        border: none;
+        height: @size-24;
+      }
+      .cancelBtn {
+        line-height: @size-24;
+        text-align: center;
+        text-decoration: none;
+        margin-left: @size-10;
+        background: @gray-light;
+      }
+    }
+  }
+}
+
+.Address{
+  overflow:hidden;
+  &-container{
+    background:@white;
+  }
+  &-left{
+    width:75%
+  }
+  &-add{
+   background:@blue;
+   height:@size-26;
+   line-height:@size-26;
+   display:block;
+   color: fade(@white,78%);
+   text-align:center;
+   font-size:@size-08;
+   margin:@size-18 @size-14;
+   text-decoration:none;
+  }
+  ul,li{
+    list-style:none;
+    margin:0;
+    padding:0
+  }
+  h4{
+    margin:0;
+    padding:0;
+  }
+  body{
+    font-size:@size-09;
+  }
+  .defaultsColor{
+    color:@blue;
+  }
+  .phone{
+    float:right;
+  }
+  .setDefault_a{
+    color:@blue;
+  }
+  li{
+    border-bottom: solid 1px @gray-lighter;
+    padding: @size-06 @size-10;
+    position: relative;
+  }
+  li div {
+    line-height: @size-15;
+  }
+  .deleteBtn {
+    position: absolute;
+    right: 10px;
+    bottom: @size-06;
+    i {
+      font-size: @size-16;
+      margin-left: @size-10;
+    }
+  }
+  .setDefaultBtn {
+    position: absolute;
+    right: 10px;
+    top: @size-05;
+  }
+  .selectedIcn {
+    position: absolute;
+    right: 10px;
+    top: 35%;
+  }
+  .selected {
+    color: @blue;
+  }
+}

@@ -1,0 +1,153 @@
+@import '../variables.less';
+
+.ProfilePage{
+  background:url(../../public/login.jpg) 50% 50%;
+  background-size:cover;
+  &-container{
+    .banner{
+      padding:@size-10 0 0;
+      background-size:cover;
+      text-align:center;
+      height:@size-70;
+      div:first-child{
+        position:relative;
+      }
+      .editIcon{
+        position:absolute;
+        width:@size-20;
+        height:@size-20;
+        border-radius:50%;
+        left:50%;
+        margin-left:10px;
+        bottom:-7px;
+        background-color:@white;
+        color:@black;
+        font-size:@size-14;
+      }
+      .icon{
+        margin:0 auto;
+        font-size:@size-09;
+        line-height:80px;
+        width:80px;
+        height:80px;
+        border-radius:50%;
+        box-shadow:0 0 10px @black;
+        overflow:hidden;
+ 
+        position:relative;
+        display:block;
+        background:@blue;
+        color:@white;
+        text-align:center;
+        text-decoration:none;
+        font-weight:bold;
+        img{
+          width:80px;
+          height:80px;
+        }
+        i{
+          font-size:@size-40;
+          border-radius:50%;
+          vertical-align: top;
+        }
+        .upload{
+          opacity:0;
+          width:80px;
+          height:80px;
+          position:absolute;
+          z-index:10;
+        }
+      }
+    }
+    .profile{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      >ul{
+        margin:0;
+        padding:0;
+        width:90%;
+        list-style:none;
+        >li{
+          margin:0 0 @size-06;
+          border:1px solid @gray-lighter;
+          border-radius:0;
+          display:flex;
+          background:@gray-lighter;
+          color:@gray;
+          >span{
+            padding:0 @size-04;
+            line-height:@size-24;
+          }
+          >input, >select{
+            height:@size-24;
+            flex:1;
+            border:none;
+            border-radius:0;
+            padding:0 @size-03;
+            background:@gray-lighter;
+            color:@gray;
+            appearance:none
+          }
+          .invited{
+            padding:0 @size-05;
+            .title{
+              padding:@size-05 0;
+            }
+            .intro{
+              font-size:@size-09;
+            }
+            .link{
+              color:@blue;
+              display:block;
+              padding:@size-05 0;
+              font-size:@size-10;
+              word-break:break-all;
+            }
+          }
+        }
+        &.editable{
+          >li{
+            color:@black;
+            background:@white;
+            >input, >select{
+              background:@white;
+              color:@black;
+            }
+          }
+        }
+      }
+    }
+    .action{
+      text-align:center;
+      a{
+        display:inline-block;
+        margin:2%;
+        line-height:@size-26;
+        text-decoration:none;
+        &.edit{
+          background:@blue;
+          color:@white;
+          width:90%;
+        }
+        &.save{
+          width:40%;
+          margin-right:5%;
+          background:@blue;
+          color:@white;
+        }
+        &.cancel{
+          width:40%;
+          margin-left:5%;
+          background:@white;
+          color:@blue;
+        }
+        &.logout{
+          width:90%;
+          background:@gray-light;
+          color:@gray-lighter;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,4 @@
+export default {
+  "api": "http://api-anker-com-37945949.us-west-2.elb.amazonaws.com",
+  "node": "http://m.anker.com"
+}

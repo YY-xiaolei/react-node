@@ -1,0 +1,7 @@
+{
+  "name": "Member",
+  "MemberPage": "./MemberPage.js",
+  "ProfilePage": "./ProfilePage.js",
+  "private": true,
+  "version": "0.0.1"
+}

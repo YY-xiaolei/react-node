@@ -1,0 +1,7 @@
+{
+  "name": "Address",
+  "version": "0.0.0",
+  "private": true,
+  "Address": "./Address.js",
+  "AddressAdd": "./AddressAdd.js"
+}

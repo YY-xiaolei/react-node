@@ -1,0 +1,6 @@
+{
+  "name": "TermOfService",
+  "version": "0.0.1",
+  "main": "./TermOfService.js",
+  "private": true
+}

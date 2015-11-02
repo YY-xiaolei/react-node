@@ -1,0 +1,46 @@
+/* React Starter Kit | MIT License | http://www.reactstarterkit.com/ */
+.Carousel {
+  width: 100%;
+  height: 296px;
+  position: relative;
+  overflow: hidden;
+}
+.Carousel .carousel-img img {
+  width: 100%;
+}
+.Carousel .carousel-ctrl {
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+}
+.Carousel .carousel-ctrl ol {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: inline-block;
+}
+.Carousel .carousel-ctrl ol ::after {
+  height: 0;
+  overflow: hidden;
+  content: '';
+}
+.Carousel .carousel-ctrl ol li {
+  float: left;
+  padding: .4em;
+}
+.Carousel .carousel-ctrl ol li a {
+  display: block;
+  height: 0;
+  padding-top: .4em;
+  width: .4em;
+  border-radius: 50%;
+  overflow: hidden;
+  background: #5a5956;
+  transition: 400ms;
+}
+.Carousel .carousel-ctrl ol li.current a {
+  background: #70b1f5;
+}

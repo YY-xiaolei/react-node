@@ -1,0 +1,61 @@
+/* React Starter Kit | MIT License | http://www.reactstarterkit.com/ */
+.Category {
+  overflow-y: scroll;
+  overflow-scrolling:touch;
+  transition: 200ms ease-in-out;
+  opacity: 0;
+  transform: translate(-100%);
+  position: fixed;
+  top: 44px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 3;
+  background: #ffffff;
+}
+.Category.show {
+  transform: translate(0);
+  opacity: 1;
+}
+.Category ul,
+.Category li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.Category li {
+  box-sizing: border-box;
+  border-top: 1px solid #eeeeee;
+}
+.Category li .category-item {
+  color: #555555;
+  display: flex;
+  line-height: 4rem;
+  text-decoration: none;
+  font-size: 0.8rem;
+}
+.Category li .category-item.cur {
+  color: #3aa6e1;
+}
+.Category li .category-item.cur i.arrow {
+  transform: rotate(180deg);
+}
+.Category li .category-item i,
+.Category li .category-item span {
+  flex: 1;
+}
+.Category li .category-item i.iconfont {
+  text-align: center;
+}
+.Category li .category-item i.iconfont.arrow {
+  transition: 200ms;
+}
+.Category li .category-item i.iconfont.icon {
+  font-size: 2rem;
+}
+.Category li ul {
+  background: #f7f7f7;
+}
+.Category li ul span {
+  padding-left: 25%;
+}
