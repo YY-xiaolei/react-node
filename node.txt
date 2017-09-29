@@ -10,3 +10,4 @@ git命令
 5、查看状态  git status
 6、标注  git commit -m '提示文本'
 7、上传  git push
+http://jingyan.baidu.com/article/358570f64dcdc2ce4724fc32.html
