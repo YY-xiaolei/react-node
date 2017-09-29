@@ -1,0 +1,12 @@
+看文件dir
+进入文件夹 cd 文件夹名
+改变盘符  f:
+
+git命令
+1、克隆 git clone https://github.com/YY-xiaolei/YY-xiaolei.github.io.git
+2、把自己要上传的文件放到文件夹里
+3、进入文件夹  cd 文件夹名
+4、添加   git add *
+5、查看状态  git status
+6、标注  git commit -m '提示文本'
+7、上传  git push
